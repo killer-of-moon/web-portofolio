@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar DIV</title>
+<style>
+html {
+background-color:orange;
+}
+
+.header {
+width:100%;
+padding: 100px 40px;
+
+/* box-sizing digunakan untuk mengikut-sertakan
+border pada elemen */
+box-sizing: border-box;
+text-align: center;
+color: white;
+background-color: #aaa;
+display: flex;
+flex-flow: row wrap;
+}
+
+.isi {
+width:100%;
+/* box-sizing digunakan untuk mengikut-sertakan
+border pada elemen */
+box-sizing: border-box;
+text-align: center;
+color: white;
+background-color: #eee;
+
+/* display flex */
+display: flex;
+flex-flow: row wrap;
+}
+
+.aturandivkiri{
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer {
+padding: 100px 40px;
+/* box-sizing digunakan untuk mengikut-sertakan
+border pada elemen */
+box-sizing: border-box;
+text-align: center;
+color: white;
+background-color: #aaa;
+}
+
+.fotobundar200px {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	transition: border-radius .5s ease;
+}
+
+.fotobundar200px:hover{
+	border-radius: 10px; 
+}
+
+.ratakanan{
+	text-align: right;
+}
+
+.ratakiri{
+	text-align: left;
+}
+
+.ratatengah{
+	text-align: center;
+}
+
+.warnanavy{
+	background-color: navy;
+	transition: background-color .5s ease;
+	transition: border-radius .3s ease;
+}
+
+.warnanavy:hover{
+	background-color: red;
+	border-radius: 15px;	
+}
+
+.list-style-none{
+	list-style: none;
+}
+
+.headerkiri{
+	width: 50%;
+}
+
+.fontputih{
+	color: white;
+}
+
+.headerkanan{
+	width: 200px;
+}
+
+.headerkiri, .headerkanan{
+	margin: auto;
+}
+
+.content{
+	padding: 10px;
+	background:url(lamborghini.jpeg);
+	background-size: cover;
+	box-sizing: border-box;
+	height: 800px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.medsos{
+	padding: 10px;
+	background: url(facebook.jpeg);
+}
+
+.isikiri{
+	width: 48%;
+	background-color: #80808096;
+	padding: 10px;
+}
+.isikanan{
+	width: 50%;
+	background-color: #80808096;
+}
+
+.skill90{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+}
+
+.persen90{
+	width: 90%;
+	height: 50px;
+	background-color: green;
+}
+.persen90:hover{
+	background-color: blue;
+	transition: background-color .5s ease;
+}
+
+.persen80{
+	width: 80%;
+	height: 50px;
+	background-color: green;
+}
+.persen80:hover{
+	background-color: blue;
+	transition: background-color .5s ease;
+}
+
+.persen100{
+	width: 100%;
+	height: 50px;
+	background-color: green;
+}
+.persen100:hover{
+	background-color: blue;
+	transition: background-color .5s ease;
+}
+.persen35:hover{
+	background-color: blue;
+	transition: background-color .5s ease;
+}
+
+.persen35{
+	width: 35%;
+	height: 50px;
+	background-color: green;
+}
+
+
+.skillkotak{
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	height: 100px;
+}
+
+.skillkotakkecil{
+	width: 15%;
+	height: 50px;
+	background-color: white;
+	margin-right: 5%;
+	border-radius: 50%;
+}
+
+.hijau{
+	background-color: green;
+}
+
+.progress-bar-animated {
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
+    animation: progress-bar-stripes 1s linear infinite;
+}
+.progress-bar-striped {
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+}
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width .6s ease;
+}
+@keyframes progress-bar-stripes{
+	from { background-position: 1rem 0; }
+	to { background-position: 0 0; }
+}
+.img{
+	filter: grayscale(100%);
+}
+.img:hover{
+	filter: unset;
+}
+.pastengah{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.skill90{
+	position: relative;
+}
+.absolut{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+}
+.margin10px{
+	margin-bottom: 10px;
+}
+.marginauto{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+</style>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+</head>
+
+<body>
+<div class="header">
+
+<div class="headerkanan ratatengah"><img src="farel.JPG" class="fotobundar200px"></div>
+
+<div class="headerkiri warnanavy ratatengah fontputih">
+<ul class="list-style-none ratatengah">
+
+	<h1 class="ratatengah">Jika ingin menemui saya</h1>
+
+	<li>Farel Fathin Nugraha</li>
+	<li><a href="cebook.com/farel.fathin.18"><i class="fa fa-facebook"></i> Facebook : @farel fathin</a></li>
+	<li>Lightingbold109@gmail.com</li>
+
+</ul>
+</div>
+
+</div>
+<div class="content">
+		<div class="isikiri">
+			<h1 class="ratatengah">Skill</h1> <div class="skill90 margin10px">
+
+			<div class="persen80 ratatengah progress-bar-animated progress-bar-striped"><p class="absolut">100% Scratch</p></div></div>
+
+		    <div class="skill90 margin10px"><div class="persen90 ratatengah progress-bar-animated progress-bar-striped">
+		    <p class="absolut">90% English</p></div>
+		</div>
+
+		    <div class="skill90 margin10px"><div class="persen100 ratatengah progress-bar-animated progress-bar-striped"><p class="absolut">100% Indonesia</p></div></div>
+
+		    <div class="skill90 margin10px"><div class="persen35 ratatengah progress-bar-animated progress-bar-striped"><p class="absolut">20% App Inventor</p></div></div>
+
+		    <div class="skill90 margin10px"><div class="persen35 ratatengah progress-bar-animated progress-bar-striped"><p class="absolut">40% Android Studio</p></div></div>
+
+	     </div>
+
+	     <div class="isikiri fontputih">
+
+	     	<h1 class="ratatengah">Biodata</h1>
+	     	<p>Halo, nama saya Farel Fathin Nugraha umur saya 14 tahun saya adalah pelajar di sekolah <a href="https://idn.sch.id/">IDN Boarding School </a>pesantren it yang baru dibuat dan sedang mempelajari untuk mempelajari website dan aplikasi di android studio dan website ini adalah target dari guru saya dan website ini dibikin untuk dikirim ke dicoding</p>
+	     	<div><img class="fotobundar200px marginauto" src="old.PNG"></div>
+	     	
+	     </div>
+
+</div>
+</body>
+
+</html> 
